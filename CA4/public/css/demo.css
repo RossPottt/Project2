@@ -18,7 +18,7 @@
   }
 
   main {
-    margin-block-end: 15px;
+    margin-inline: 15px;
   }
 
   footer {
@@ -36,7 +36,7 @@
 
     .index_header {
       background-image: url('../images/skydive.jpg');
-      height: 400px;
+      height: 800px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -47,7 +47,7 @@
       position: absolute;
       left: 2%;
       top: 20%;
-      font-size: 5rem;
+      font-size: 8rem;
       color: white;
     }
 
@@ -75,13 +75,19 @@
     .info_grid {
       display: grid;
       grid-template-columns: auto auto;
+      margin: 0px; /*ensures that the images in this section are flush with the side of the page*/
     }
     
     section {
-      padding: 10px;
+      padding: 10px; /*adds space around the text*/
     }
 
   /* Style for the chat page */  
+
+    .nav_button {
+      color:black;
+    }
+
   /* Style the side navigation */
   .sidenav {
     height: 100%;
