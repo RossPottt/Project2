@@ -1,12 +1,87 @@
-* {
-    box-sizing: border-box;
-  }
-  
+ /*styling that affects all pages*/
+
+  /*default styling, unless overriden*/
   body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px; /*ensures content is flush with the side of the page*/
+    padding: 0px;
+    color:;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-  
+
+  p {
+    font-size: large;
+  }
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  main {
+    margin-block-end: 15px;
+  }
+
+  footer {
+    background-color: deepskyblue;
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  /*Unless overriden, images will scale down to fit mobile screens, but not increase in size*/
+  img {
+    max-width: 100%;
+  }
+
+  /*style for the index page*/
+
+    .index_header {
+      background-image: url('../images/skydive.jpg');
+      height: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* adjusts the style of the h1 specifically inside the header*/
+    .index_header h1 {
+      position: absolute;
+      left: 2%;
+      top: 20%;
+      font-size: 5rem;
+      color: white;
+    }
+
+  /*Style for the info page*/
+
+    .info_header {
+        background-image: url('../images/scuba1.avif');
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+    /* adjusts the style of the h1 specifically inside the header*/
+    .info_header h1 {
+      position: absolute;
+      left: 2%;
+      top: 20%;
+      font-size: 5rem;
+      color: white;
+    }
+
+
+    /*sets up the grid layout for the info page*/
+    .info_grid {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    section {
+      padding: 10px;
+    }
+
+  /* Style for the chat page */  
   /* Style the side navigation */
   .sidenav {
     height: 100%;
